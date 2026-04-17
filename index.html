@@ -57,8 +57,21 @@
         .energy { font-style: italic; color: #777; }
 
         /* LISTES */
-        ul { list-style-type: "🌀 "; padding-left: 20px; }
-        .hobbies-list { list-style-type: "✨ "; }
+        ul.avatar-list { list-style-type: none; padding-left: 10px; }
+        
+        ul.avatar-list li::before {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+
+        /* emoji cute */
+        ul.avatar-list li:nth-child(1)::before { content: "💧"; } /* Water turbine */
+        ul.avatar-list li:nth-child(2)::before { content: "💨"; } /* Fans */
+        ul.avatar-list li:nth-child(3)::before { content: "🪨"; } /* Ball mills */
+
+        /* pour les passions */
+        ul.hobbies-list { list-style-type: "✨ "; padding-left: 20px;}
 
         /* CARTE RECHERCHE */
         .research-box {
@@ -96,20 +109,20 @@
                 </div>
             </div>
             <p>During my Master’s in Acoustics, I discovered my unhinged passion: <span class="highlight">ROTATING MACHINERY.</span> I am now pursuing a PhD focusing on the vibes (literally) of:</p>
-            <ul>
-                <li>Water turbines (splashy)</li>
-                <li>Fans (windy)</li>
-                <li>Ball mills (rocks in a blender)</li>
+            <ul class="avatar-list">
+                <li><strong>Water turbines</strong> (splashy)</li>
+                <li><strong>Fans</strong> (windy)</li>
+                <li><strong>Ball mills</strong> (rocks in a blender)</li>
             </ul>
-            <p>I’m essentially one element away from becoming the Avatar. <i>"Is it a man’s world?"</i> maybe. But why leave all the fun to the men? Honestly, you’ve never stayed up until 3 AM analyzing the raw vibration signal of a Francis turbine ?</p>
+            <p>I’m essentially one element away 🔥 from becoming the Avatar. <i>"Is it a man’s world?"</i> maybe. But why leave all the fun to the men? Honestly, you’ve never stayed up until 3 AM analyzing the raw vibration signal of a Francis turbine ?</p>
         </section>
 
         <section id="research">
             <h2>My Research</h2>
             <div class="research-box">
                 <h3>Ph.D. Student in AI-driven vibration analysis</h3>
-                <p><strong>Focus:</strong> Autonomous fault prediction for rotating machinery in collaboration with <strong>LAUM</strong> (CNRS, UMR 6613).</p>
-                <p><strong>Supervisors:</strong> Kais HASSAN & Jean-Hugh THOMAS.</p>
+                <p><strong>Focus:</strong> Autonomous fault prediction for rotating machinery in collaboration with <strong>LAUM</strong> (CNRS, UMR 6613) and OROS.</p>
+                <p><strong>Supervisors:</strong> Kais HASSAN & Jean-Hugh THOMAS & Amaury GRAILLAT.</p>
             </div>
         </section>
 
