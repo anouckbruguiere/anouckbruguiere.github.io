@@ -1,146 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anouck Bruguière | PhD & Vibes</title>
-    <style>
-        /* Styles Généraux */
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6; 
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #fcfcfc;
-        }
-
-        /* BANDEAU DU HAUT (Bleu Pastel) */
-        header {
-            background-color: #d1e9ff; /* Bleu pastel */
-            padding: 20px 0;
-            text-align: center;
-            border-bottom: 1px solid #b3d7ff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #004494;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9em;
-            letter-spacing: 1px;
-        }
-
-        nav a:hover { color: #d73a49; }
-
-        /* CONTENU */
-        .container {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section { margin-bottom: 50px; }
-        
-        h1 { font-size: 2.5em; color: #2c3e50; margin-bottom: 10px; }
-        h2 { border-left: 5px solid #d1e9ff; padding-left: 15px; color: #2c3e50; }
-
-        .profile-flex { display: flex; gap: 30px; align-items: flex-start; margin-top: 20px; }
-        .main-photo { width: 250px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-
-        .highlight { font-weight: bold; color: #d73a49; }
-        .energy { font-style: italic; color: #777; }
-
-        /* LISTES */
-        ul.avatar-list { list-style-type: none; padding-left: 10px; }
-        
-        ul.avatar-list li::before {
-            display: inline-block;
-            margin-right: 15px;
-            font-size: 1.2em;
-        }
-
-        /* emoji cute */
-        ul.avatar-list li:nth-child(1)::before { content: "💧"; } /* Water turbine */
-        ul.avatar-list li:nth-child(2)::before { content: "💨"; } /* Fans */
-        ul.avatar-list li:nth-child(3)::before { content: "🪨"; } /* Ball mills */
-
-        /* pour les passions */
-        ul.hobbies-list { list-style-type: "✨ "; padding-left: 20px;}
-
-        /* CARTE RECHERCHE */
-        .research-box {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #eee;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-        }
-
-        footer { text-align: center; padding: 40px; color: #999; font-size: 0.8em; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anouck Bruguière | PhD & Vibes</title>
+  <meta name="description" content="Anouck Bruguière, PhD student in AI-driven vibration analysis of rotating machinery (LAUM, CNRS and OROS).">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="page">
 
-    <header>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#research">My Research</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="https://www.linkedin.com/in/anouck-b-947a131ab/">Contact</a>
-        </nav>
-    </header>
+  <header class="side">
+    <a class="name" href="index.html">Anouck Bruguière</a>
+    <nav aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="posters.html">Posters</a>
+      <a href="hobbies.html">Hobbies</a>
+      <a href="https://www.linkedin.com/in/anouck-b-947a131ab/">LinkedIn</a>
+    </nav>
+  </header>
 
-    <div class="container">
-        
-        <section id="about">
-            <h1>Anouck Bruguière</h1>
-            <div class="profile-flex">
-                <img src="https://www.wpi.fr/images/Prestations/Pelton.gif" alt="Turbine" class="main-photo">
-                <div>
-                    <p>My name is <strong>Anouck Bruguière</strong>, and I am a multitasking young lady. In my spare time, I play the harp, but I’m also a failed figure skater <span class="energy">(shameful side quest)</span>.</p>
-                    <p>I’m originally from the South of France, which provides the perfect sunny lighting for my true calling: obsessing over things that spin. It’s a lifestyle, really, but first, let me explain.</p>
-                    <p>After dreaming 1,000 different career paths, from pastry chef to journalist, I naturally chose the most chaotic neutral path possible: a dual bachelor's in <strong>Physics and Music</strong>. Why choose one type of suffering when you can have two?</p>
-                </div>
-            </div>
-            <p>During my Master’s in Acoustics, I discovered my unhinged passion: <span class="highlight">ROTATING MACHINERY.</span> I am now pursuing a PhD focusing on the vibes (literally) of:</p>
-            <ul class="avatar-list">
-                <li><strong>Water turbines</strong> (splashy)</li>
-                <li><strong>Fans</strong> (windy)</li>
-                <li><strong>Ball mills</strong> (rocks in a blender)</li>
-            </ul>
-            <p>I’m essentially one element away 🔥 from becoming the Avatar. <i>"Is it a man’s world?"</i> maybe. But why leave all the fun to the men? Honestly, you’ve never stayed up until 3 AM analyzing the raw vibration signal of a Francis turbine ?</p>
-        </section>
+  <main>
+    <h1>Anouck Bruguière</h1>
+    <p class="role">PhD student in AI-driven vibration analysis, at LAUM (CNRS, UMR 6613) and OROS.</p>
 
-        <section id="research">
-            <h2>My Research</h2>
-            <div class="research-box">
-                <h3>Ph.D. Student in AI-driven vibration analysis</h3>
-                <p><strong>Focus:</strong> Autonomous fault prediction for rotating machinery in collaboration with <strong>LAUM</strong> (CNRS, UMR 6613) and OROS.</p>
-                <p><strong>Supervisors:</strong> Kais HASSAN & Jean-Hugh THOMAS & Amaury GRAILLAT.</p>
-            </div>
-        </section>
+    <!-- EDIT: replace this animation with your own photo if you want, e.g. src="images/anouck.jpg" -->
+    <img class="portrait" src="https://www.wpi.fr/images/Prestations/Pelton.gif" alt="Animation of a Pelton turbine spinning">
 
-        <section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul class="hobbies-list">
-                <li><strong>Cuisine:</strong> Testing the acoustics of a crunch.</li>
-                <li><strong>Figure Skating:</strong> Gravity is my oldest enemy.</li>
-                <li><strong>Montagne:</strong> Altitude vibes.</li>
-                <li><strong>Goofy Presentations:</strong> Making science weirder, one slide at a time.</li>
-            </ul>
-        </section>
+    <p>My name is <strong>Anouck Bruguière</strong>, and I am a multitasking young lady. In my spare time, I play the harp, but I’m also a failed figure skater <span class="aside">(shameful side quest)</span>.</p>
 
-    </div>
+    <p>I’m originally from the South of France, which provides the perfect sunny lighting for my true calling: obsessing over things that spin. It’s a lifestyle, really, but first, let me explain.</p>
 
-    <footer>
-        © 2024 Anouck Bruguière - Built with chaos and rotating parts.
-    </footer>
+    <p>After dreaming 1,000 different career paths, from pastry chef to journalist, I naturally chose the most chaotic neutral path possible: a dual bachelor’s in <strong>Physics and Music</strong>. Why choose one type of suffering when you can have two?</p>
 
+    <p>During my Master’s in Acoustics, I discovered my unhinged passion: <strong>ROTATING MACHINERY.</strong> I am now pursuing a PhD focusing on the vibes (literally) of water turbines (splashy), fans (windy) and ball mills (rocks in a blender). More about that on the <a href="research.html">research page</a>.</p>
+
+    <p>I’m essentially one element away from becoming the Avatar. <em>“Is it a man’s world?”</em> maybe. But why leave all the fun to the men? Honestly, you’ve never stayed up until 3 AM analyzing the raw vibration signal of a Francis turbine?</p>
+
+    <h2>Contact</h2>
+    <p>The easiest way to reach me is <a href="https://www.linkedin.com/in/anouck-b-947a131ab/">LinkedIn</a>.</p>
+    <!-- EDIT: add your professional email here if you want, e.g. <p>Email: firstname.lastname@univ-lemans.fr</p> -->
+
+    <footer>Built with chaos and rotating parts. Last updated November 2026.</footer>
+  </main>
+
+</div>
 </body>
 </html>
