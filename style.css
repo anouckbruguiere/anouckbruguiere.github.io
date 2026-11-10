@@ -105,6 +105,14 @@ dl.hobbies dd { margin: 0; }
   margin: 0.25rem 0 1rem 1.5rem;
 }
 
+figure.photo {
+  float: right;
+  width: 16rem;
+  margin: 0.25rem 0 1rem 1.75rem;
+}
+figure.photo img { display: block; width: 100%; height: auto; }
+figure.photo figcaption { margin-top: 0.4rem; font-size: 0.85rem; line-height: 1.4; color: var(--muted); }
+
 /* ---------- Publications ---------- */
 .pubs { list-style: none; padding: 0; margin: 0; }
 .pubs > li { margin-bottom: 1.6rem; }
@@ -169,4 +177,16 @@ footer {
   .side nav a { margin-left: 0; padding: 0.2rem 0.5rem; }
 
   .portrait { float: none; display: block; width: min(13rem, 60%); margin: 0 0 1.25rem; }
+  figure.photo { float: none; width: 100%; max-width: 24rem; margin: 0 0 1.25rem; }
 }
+
+/* ---------- Background (dates + text) ---------- */
+ul.timeline { list-style: none; padding: 0; margin: 0 0 1rem; }
+ul.timeline li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 0 1rem; margin-bottom: 0.6rem; }
+ul.timeline .when { color: var(--muted); }
+@media (max-width: 520px) {
+  ul.timeline li { display: block; }
+  ul.timeline .when { display: block; font-size: 0.9rem; }
+}
+
+.award { font-weight: 600; }

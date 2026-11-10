@@ -25,38 +25,26 @@
   <main>
     <h1>Publications</h1>
 
-    <p>Most recent first. Click “Show abstract” to read the summary. When a poster exists, it is linked next to the paper and shown on the <a href="posters.html">posters page</a>.</p>
+    <p>Most recent first. Click “Show abstract” to read the summary. My posters are on the <a href="posters.html">posters page</a>.</p>
 
     <!--
       HOW TO ADD A PAPER
       1. Put the PDF in a folder named "papers" (e.g. papers/my-paper.pdf) and commit it.
-      2. Copy one whole <li>...</li> block below, paste it at the top of its list, and edit the text.
+      2. Copy one whole <li>...</li> block below, paste it at the top of the list, and edit the text.
       3. Remove the links you do not have (pdf, poster, doi). Remove <details> if you have no abstract.
-      The bracketed [texts] below are placeholders to replace.
     -->
-
-    <h2>Journal articles</h2>
-    <ul class="pubs">
-      <li>
-        <p><strong>A. Bruguière</strong>, [Co-author 1], [Co-author 2]. <span class="title">[Title of the paper]</span>.<br>
-        <em>[Journal name]</em>, [year].<br>
-        [<a href="papers/paper-1.pdf">pdf</a>, <a href="https://doi.org/">doi</a>]</p>
-        <details>
-          <summary>Show abstract</summary>
-          <p>[Paste the abstract here.]</p>
-        </details>
-      </li>
-    </ul>
 
     <h2>Conference papers</h2>
     <ul class="pubs">
       <li>
-        <p><strong>A. Bruguière</strong>, [Co-author 1], [Co-author 2]. <span class="title">[Title of the conference paper]</span>.<br>
-        <em>[Conference name]</em>, [year].<br>
-        [<a href="posters/poster-1.pdf">poster</a>, <a href="papers/paper-2.pdf">pdf</a>]</p>
+        <p><strong>A. Bruguière</strong>, K. Hassan, J.-H. Thomas, A. Graillat. <span class="title">Interpretable Anomaly Detection in Rotating Machines for Experts Using Convolutional Autoencoder</span>.<br>
+        <em>Forum Acusticum 2026</em>, Graz, Austria, September 2026. Submitted.</p>
+        <!-- EDIT: once you have the paper PDF, upload it to "papers/" and add this line:
+        <p>[<a href="papers/forum-acusticum-2026.pdf">pdf</a>]</p>
+        Also replace "Submitted." above with the right status (Accepted, Presented, Published in the proceedings...). -->
         <details>
           <summary>Show abstract</summary>
-          <p>[Paste the abstract here.]</p>
+          <p>Unplanned breakdowns in industrial rotating machinery can cost millions per incident, making fault detection a critical maintenance strategy. This work presents an anomaly detection approach based on a 2D convolutional autoencoder (CAE) trained exclusively on healthy vibration data. The publicly available Mechanical Faults in Rotating Machinery (MFRM) dataset is used, comprising acceleration signals acquired under normal conditions and three fault types: unbalance, misalignment, and mechanical looseness. Vibration signals are first resampled into the angular domain via Computed Order Tracking (COT), then transformed into order spectrograms (OS) whose axes, harmonic orders and shaft revolutions, are directly meaningful to domain experts. A Log-Z standardisation enhances the sensitivity of the CAE to subtle spectral deviations. Trained to minimise reconstruction error on healthy OS only, the OS-CAE produces elevated mean squared error (MSE) when encountering faulty inputs. A threshold calibrated on the combined training and validation MSE distributions separates healthy from anomalous samples. Beyond binary detection, a per-order MSE profile of reconstructed spectrograms localises reconstruction failures at specific harmonic orders, providing interpretable visual cues that hint at the nature of the detected fault without relying on post-hoc explainability methods.</p>
         </details>
       </li>
     </ul>
