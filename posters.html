@@ -29,36 +29,36 @@
 
     <!--
       HOW TO ADD A POSTER
-      1. Put the poster file in the "posters" folder, with a simple name (lowercase, no spaces, no accents).
-      2. Put a preview image next to it (e.g. posters/poster-paiss-2025.jpg, around 800 px wide) and use it in the <img> below.
-         Until then the grey "poster preview" placeholder is shown.
-      3. Copy one whole <li>...</li> block, paste it at the top of the list, and edit the file names and text.
+      1. Put the poster image (PNG or JPG) in the "posters" folder, with a simple name (lowercase, no spaces, no accents).
+      2. Copy one whole <li>...</li> block, paste it at the top of the list, and write the same file name in the two places
+         (href="..." and src="...").
+      3. If you also have a PDF, add a second link in the caption: <a href="posters/my-poster.pdf">pdf</a>
     -->
 
     <ul class="posters">
       <li>
         <figure>
-          <a href="posters/poster-cwr.pdf">
-            <img src="posters/placeholder.svg" alt="Poster: [Title of the poster]" loading="lazy">
+          <a href="posters/poster-cwr.png">
+            <img src="posters/poster-cwr.png" alt="Poster: Anomaly detection using extracted orders and autoencoders" loading="lazy">
           </a>
           <figcaption>
-            <strong>[Title of the poster]</strong><br>
+            <strong>Anomaly detection using extracted orders and autoencoders</strong><br>
             JJCAAS, Le Mans, January 2026<br>
-            <a href="posters/poster-cwr.pdf">pdf</a>
+            <a href="posters/poster-cwr.png">full size</a>
           </figcaption>
         </figure>
       </li>
 
       <li>
         <figure>
-          <a href="posters/poster-paiss-2025.pdf">
-            <img src="posters/placeholder.svg" alt="Poster: Autonomous fault prediction for rotating machines" loading="lazy">
+          <a href="posters/poster-paiss-2025.png">
+            <img src="posters/poster-paiss-2025.png" alt="Poster: Autonomous fault prediction for rotating machines" loading="lazy">
           </a>
           <figcaption>
             <strong>Autonomous fault prediction for rotating machines</strong><br>
             PAISS, Inria, September 2025<br>
             <span class="award">Best poster award</span><br>
-            <a href="posters/poster-paiss-2025.pdf">pdf</a>
+            <a href="posters/poster-paiss-2025.png">full size</a>
           </figcaption>
         </figure>
       </li>
